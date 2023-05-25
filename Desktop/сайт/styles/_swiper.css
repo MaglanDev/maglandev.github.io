@@ -1,0 +1,133 @@
+.swiper {
+  width: 290px;
+  height: 417px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-btn {
+  position: relative;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #666;
+  border: 2px solid #666;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.swiper-btn::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 7px / 2);
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+
+.swiper-btn-next::before {
+  left: calc(50% - 10px / 2);
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+.swiper-btn-dark::before {
+  border-color: var(--white);
+}
+
+.swiper-btn-light::before {
+  border-color: var(--dark);
+}
+
+.swiper-btn-prev::before {
+  left: calc(50% - 3px / 2);
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.swiper-btn-dark::before {
+  border-color: var(--white);
+}
+
+.swiper-btn-light::before {
+  border-color: var(--dark);
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0.55;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0.55;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-pagination {
+  height: max-content;
+}
+
+.swiper-pagination-bullet {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.swiper-btn-dark,
+.swiper-btn-light {
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.swiper-btn-dark:hover {
+  background-color: var(--middle-pink);
+  border-color: var(--middle-pink);
+}
+
+.swiper-btn-dark:focus {
+  outline: none;
+  border-color: var(--dark);
+}
+
+.swiper-btn-dark:active {
+  background-color: var(--pink);
+  border-color: var(--dark);
+}
+
+.swiper-btn-light:hover {
+  background-color: var(--light-pink);
+  border-color: var(--light-pink);
+}
+
+.swiper-btn-light:focus {
+  outline: none;
+  border-color: var(--middle-pink);
+}
+
+.swiper-btn-light:active {
+  background-color: var(--light-pink);
+  border-color: var(--middle-pink);
+}
+
+.swiper-button-disabled:hover {
+  background-color: #666;
+  border-color: #666;
+}
+
+.swiper-button-disabled:focus {
+  background-color: #666;
+  border-color: #666;
+}
+
+.swiper-button-disabled:active {
+  background-color: #666;
+  border-color: #666;
+}

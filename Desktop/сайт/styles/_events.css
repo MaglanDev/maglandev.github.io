@@ -1,0 +1,284 @@
+.events {
+  padding-bottom: 61px;
+}
+
+.events__btn {
+  display: none;
+}
+
+.events__heading {
+  margin-bottom: 12px;
+}
+
+.events__swiper {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.events__swiper-wrapper {
+  height: auto;
+
+  margin-bottom: 24px;
+}
+
+.events__swiper-pagination {
+  position: inherit;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 110px;
+
+  margin: 0 auto;
+}
+
+.events__swiper-pagination-item {
+  width: 100%;
+  max-width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #666;
+  border: 2px solid transparent;
+  opacity: 0.4;
+  transition-property: opacity, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.events__swiper-pagination-item-active {
+  opacity: 1;
+}
+
+.events__swiper-card-wrap {
+  width: 100%;
+}
+
+.events__swiper-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.events__card-content {
+  display: flex;
+  flex-direction: column;
+
+  border: solid 1px #cacaca;
+  border-top: none;
+
+  padding-top: 14px;
+  padding-right: 10px;
+  padding-bottom: 52px;
+  padding-left: 28px;
+
+  min-height: 418px;
+}
+
+.events__swiper-card-img {
+  display: block;
+
+  width: 100%;
+}
+
+.events__card-place {
+  text-align: right;
+  margin-left: auto;
+  max-width: 189px;
+}
+
+.events__card-time {
+  text-align: right;
+
+  margin-left: auto;
+  margin-bottom: 5px;
+}
+
+.events__card-heading {
+  font-size: 24px;
+
+  max-width: 244px;
+
+  margin-bottom: auto;
+}
+
+.events__card-text {
+  font-size: 16px;
+  line-height: 32px;
+
+  max-width: 224px;
+
+  margin-bottom: auto;
+}
+
+.events__card-link {
+  color: #9d5cd0;
+
+  max-width: 90px;
+
+  border-bottom: 1px solid #9d5cd0;
+}
+
+.events__card-link:hover {
+  color: var(--pink);
+  border-color: var(--pink);
+}
+
+.events__card-link:active {
+  color: var(--semi-dark);
+  border-color: var(--semi-dark);
+  background: none;
+}
+
+@media (min-width: 732px) {
+  .events {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .events__heading {
+    margin-bottom: 16px;
+  }
+
+  .events__swiper {
+    max-width: none;
+
+    margin-bottom: 24px;
+  }
+
+  .events__swiper-wrapper {
+    flex-wrap: wrap;
+    gap: 34px;
+  }
+
+  .events__swiper-card-wrap {
+    width: calc((100% - 34px) / 2);
+  }
+
+  .events__swiper-card-wrap:not(:nth-child(-n + 2)) {
+    display: none;
+  }
+
+  .events__swiper-pagination {
+    display: none;
+  }
+
+  .events__card-content {
+    padding-right: 16px;
+    padding-left: 35px;
+  }
+
+  .events__card-place {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+  }
+
+  .events__card-heading {
+    margin-bottom: 5px;
+  }
+
+  .events__card-text {
+    max-width: 243px;
+  }
+
+  .events__btn {
+    display: block;
+
+    border: 3px solid #9d5cd0;
+    border-radius: 100px;
+
+    margin: 0 auto;
+    padding: 15px 35px;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #9d5cd0;
+  }
+
+  .events__btn:hover {
+    border-color: var(--border-hover);
+  }
+
+  .events__btn:focus {
+    outline: 2px solid var(--semi-pink);
+    outline-offset: 3px;
+  }
+
+  .events__btn:active {
+    background-color: var(--pink);
+    border-color: var(--border-hover);
+    color: var(--white);
+  }
+}
+
+@media (min-width: 980px) {
+  .events {
+    padding-top: 80px;
+    padding-bottom: 78px;
+  }
+
+  .events__swiper-wrapper {
+    gap: 27px;
+  }
+
+  .events__swiper-card-wrap {
+    width: calc((100% - 27px * 2) / 3);
+  }
+
+  .events__swiper-card-wrap:not(:nth-child(-n + 2)) {
+    display: block;
+  }
+
+  .events__swiper-card-wrap:not(:nth-child(-n + 3)) {
+    display: none;
+  }
+
+  .events__card-content {
+    padding-top: 15px;
+    padding-left: 35px;
+    padding-right: 18px;
+  }
+
+  .events__card-heading {
+    max-width: none;
+  }
+
+  .events__card-text {
+    max-width: none;
+  }
+}
+
+@media (min-width: 1500px) {
+  .events {
+    padding-bottom: 81px;
+  }
+  
+  .events__swiper-wrapper {
+    gap: 50px;
+  }
+
+  .events__swiper-card-wrap {
+    width: calc((100% - 50px * 2) / 3);
+  }
+
+  .events__swiper-card {
+    max-width: none;
+  }
+
+  .events__card-content {
+    min-height: 335px;
+
+    padding-top: 16px;
+    padding-bottom: 48px;
+    padding-left: 50px;
+  }
+
+  .events__card-heading {
+    max-width: 420px;
+  }
+
+  .events__card-text {
+    max-width: 400px;
+  }
+}
